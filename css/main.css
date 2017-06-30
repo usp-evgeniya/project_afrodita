@@ -1,0 +1,251 @@
+/*
+* main
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.42;
+    font-size: 18px;
+    color: #221f1f;
+    }
+
+/*
+header
+*/
+
+.header {
+    background-color:  #131415; 
+    }
+
+.contacts__phone {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 21px;
+    text-decoration: none
+}
+
+.contacts__schedule {
+    font-weight: bold;
+    color: #f89513;
+    font-size: 14px;
+    text-decoration: none;
+    opacity: 0.7
+}
+
+.menu-list__icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.menu-list__icon-main {
+    background-image: url('../img/icons/menu/main.png');
+    width: 19px;
+    height: 14px;
+}
+
+.menu-list__icon-services {
+    background-image: url('../img/icons/menu/service.png');
+    width: 19px;
+    height: 14px;
+}
+
+.menu-list__icon-refs {
+    background-image: url('../img/icons/menu/refs.png');
+    width: 21px;
+    height: 19px;
+}
+
+.menu-list__link {
+    text-decoration: none;
+}
+
+.menu-list__text {
+    color: #f89513;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.menu-list__link:hover .menu-list__icon-main {
+    background-image: url('../img/icons/menu/main_hover.png');
+    background-size: contain;
+    width: 19px;
+    height: 14px;
+}
+.menu-list__link:active .menu-list__icon-main {
+    background-image: url('../img/icons/menu/main_hover.png');
+    background-size: contain;
+    width: 19px;
+    height: 14px;
+}
+
+.menu-list__link:hover .menu-list__icon-services {
+    background-image: url('../img/icons/menu/service_hover.png');
+    background-size: contain;
+    width: 19px;
+    height: 14px;
+}
+
+.menu-list__link:active .menu-list__icon-services {
+    background-image: url('../img/icons/menu/service_hover.png');
+    background-size: contain;
+    width: 19px;
+    height: 14px;
+}
+
+.menu-list__link:hover .menu-list__icon-refs {
+    background-image: url('../img/icons/menu/refs_hover.png');
+    background-size: contain;
+    width: 21px;
+    height: 19px;
+}
+
+.menu-list__link:active .menu-list__icon-refs {
+    background-image: url('../img/icons/menu/refs_hover.png');
+    background-size: contain;
+    width: 21px;
+    height: 19px;
+}
+
+.menu-list__link:hover .menu-list__text {
+    color: #221f1f;
+}
+
+.menu-list__link:active .menu-list__text {
+    color: #221f1f;
+}
+
+.menu-list {
+    list-style-type: none;
+}
+
+/*
+main page content
+*/
+
+.page-image {
+    width: 880px;
+    height: 355px;
+    overflow: hidden;
+}
+
+.page-title {
+    font-size: 49px;
+    weight: bold;
+    color: #ffffff;
+}
+
+.page-image__picture {
+    width: 880px;
+    vertical-align: middle;
+}
+
+.description {
+    background-color: #131415;
+    color:#ffffff;
+}
+
+.partners {
+    font-size: 49px;
+    text-transform: uppercase;
+}
+
+.partners__list {
+    list-style-type: none;
+}
+
+.partners__link-icon {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.partners__link-icon:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale (0%);
+}
+
+/*
+footer
+*/
+
+.footer {
+    background-color: #131415;
+}
+
+.author {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.social__text {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+}
+
+.social__icon-vk {
+    background-image: url('../img/icons/social/vk.png');
+    background-size: contain;
+}
+
+.social__icon-fb {
+    background-image: url('../img/icons/social/fb.png');
+    background-size: contain;
+}
+
+.social__icon-google {
+    background-image: url('../img/icons/social/google.png');
+    background-size: contain;
+}
+
+.social__icon-twitter {
+    background-image: url('../img/icons/social/twitter.png');
+    background-size: contain;
+}
+
+.social__icon-mail {
+    background-image: url('../img/icons/social/mail.png');
+    background-size: contain;
+}
+
+.social__link:hover .social__icon-vk {
+    background-image: url('../img/icons/social/vk_hover.png');
+    background-size: contain;
+    opacity: 1;
+}
+
+.social__link:hover .social__icon-fb {
+    background-image: url('../img/icons/social/fb_hover.png');
+    background-size: contain;
+    opacity: 1;
+}
+
+.social__link:hover .social__icon-google {
+    background-image: url('../img/icons/social/google_hover.png');
+    background-size: contain;
+    opacity: 1;
+}
+.social__link:hover .social__icon-twitter {
+    background-image: url('../img/icons/social/twitter_hover.png');
+    background-size: contain;
+    opacity: 1;
+}
+.social__link:hover .social__icon-mail {
+    background-image: url('../img/icons/social/mail_hover.png');
+    background-size: contain;
+    opacity: 1;
+}
+
+/*
+* 
+*/
+
