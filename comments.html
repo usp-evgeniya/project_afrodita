@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> <!-- Нужно указать язык страницы -->
     <head>
         <meta charset="UTF-8">
         <title>Фитнес-клуб "Афродита". Йога, фитнес, бассейн, кроссфит, TRX. Отзывы</title>
@@ -11,23 +11,20 @@
         <div class="page">
             <!--Header-->
             <header class="header">
-                <img src="img/logo/afrodita.png" alt="Афродита" class ="logo">
+                <img src="img/logo/afrodita.png" alt="Афродита" class ="logo"> 
                 <div class="contacts">
-                    <a href:"tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
+                    <a href:"tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a> <!-- Формат должен быть следующий: href="tel:+79818169862" -->
                     <a href="#" class="contacts__schedule">График работы</a>
                 </div>
             </header>
 
-            <section class="about">
+            <section class="about"> <!-- Зачем тебе здесь section? Если объяснишь, разрешу оставить) -->
                 <!--Menu-->
                 <aside class="sidebar">
                     <nav class="menu">
-                        <ul class="menu-list">
+                        <ul class="menu-list"> <!-- Про БЭМ глянь созвон, почитай документацию. Если что, разберем с тобой) -->
                             <li class="menu-list__item">
-                                <a href="" class="menu-list__link">
-                                    <div class="menu-list__icon menu-list__icon-main"></div>    
-                                    <div class="menu-list__text">Главная</div>
-                                </a>
+                                <a href="" class="menu-list__link">Главная</a> <!-- Здесь должно быть так, а иконку задавать псевдоэлементом -->
                             </li>
                             <li class="menu-list__item">
                                 <a href="" class="menu-list__link">
@@ -47,7 +44,7 @@
                 
                 <!--Main page content-->
                 <main class="main-content">
-                    <div class="breadcrumbs"><span>Главная</span>/Отзывы</div>
+                    <div class="breadcrumbs"><span>Главная</span>/Отзывы</div> <!-- Хлебные крошки - это навигационный компонет. Все навигационные комgоненты на cnранице должны быть обернуты в тег навигации nav. А сами "крошки" в список. -->
                     <div class="comments">
                         <h2 class="comments__title">Отзывы</h2>
                         <ul class="comments__list">
