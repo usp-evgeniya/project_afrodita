@@ -11,40 +11,39 @@
     </head>
 
     <body>
-        <div class="page">
+        <div class="wrapper">
             <!--Header-->
-                <header class="header clearfix">
-                    <div class="logo">
-                        <a href="index.html" class="logo__wrapper">
-                            <img src="img/logo/afrodita.png" alt="Афродита" class ="logo__image">
+            <header class="header clearfix">
+                <div class="container">
+                    <div class="header__logo main-logo">
+                        <a href="index.html" class="main-logo__wrapper">
+                            <img src="img/logo/afrodita.png" alt="Афродита" class ="main-logo__img">
                         </a>                
                     </div>
-                    <div class="contacts">
-                        <a href:"tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
+                    <div class="header__contacts contacts">
+                        <a href:"tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
                         <a href="#" class="contacts__schedule">График работы</a>
                     </div>
-                </header>
-                <section class="about">
+                </div>
+            </header>
+            <div class="container"> <!--Отделяет Header от основной части-->
                     <!--Menu-->
                     <aside class="sidebar">
                         <nav class="menu">
-                            <ul class="menu-list">
-                                <li class="menu-list__item">
-                                    <a href="" class="menu-list__link">
-                                        <div class="menu-list__icon menu-list__icon-main"></div>    
-                                        <div class="menu-list__text">Главная</div>
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="index.html" class="menu__link menu__main menu__main--active"> <!--Как при использовании псевдоэлементов сделать стилизацию псевдоэлемента, когда он активен?-->
+                                        <div class="menu__text">Главная</div> <!--Как сделать, чтобы текст переносился на новую строку, если будет длинным?-->
                                     </a>
                                 </li>
-                                <li class="menu-list__item">
-                                    <a href="" class="menu-list__link">
-                                        <div class="menu-list__icon menu-list__icon-services"></div>    
-                                        <div class="menu-list__text">Услуги</div>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link menu__services">
+                                        <div class="menu__text">Услуги</div>
                                     </a>
                                 </li>
-                                <li class="menu-list__item">
-                                    <a href="" class="menu-list__link">
-                                        <div class="menu-list__icon  menu-list__icon-refs"></div>    
-                                        <div class="menu-list__text">Отзывы</div>
+                                <li class="menu__item">
+                                    <a href="comments.html" class="menu__link menu__comments">
+                                        <div class="menu__text">Отзывы</div>
                                     </a>
                                 </li>                        
                             </ul>
@@ -52,13 +51,14 @@
                     </aside>
                 
                 <!--Main page content-->
-                <main class="main-content">
-                    <div class="page-image">
-                        <img src="img/background/afrodita/Powerlifting.jpg" alt="Powerlifting" class="page-image__picture">
+                <main class="main">
+                    <div class="main__cover">
+                        <img src="img/background/afrodita/Powerlifting.jpg" alt="Powerlifting" class="main__img">
+                        <h1 class="main__title">О компании</h1>    <!--Не получается убрать margin y H1-->
+
                     </div>
-                    <h1 class="page-title">О компании</h1>                
-                    
-                    <div class="page-text">
+                   
+                    <div class="main__text">
                         <p><b>Фитнес-центр «Афродита»</b> приглашает вас оздоровиться и провести приятно время с друзьями или знакомыми, занимаясь вместе спортом. Квалифицированные тренеры найдут индивидуальный подход к каждому, помогут достигнуть поставленных целей и определят оптимальную нагрузку. </p>
                         <p>Нашим главным отличием мы считаем огромный <b>50 метровый бассейн</b>, состоящий из 6 дорожек. Помимо бассейна в зоне отдыха установлены финские сауны и турецкий хамам. Это прекрасный вариант для восстановления после тяжелой тренировки.</p>
                         <p>На первом этаже в фитобаре вы сможете заказать травяные чаи, белковые коктейли, минеральную воду и протеиновые батончики. Также здесь есть детская комната с воспитателями и нянями, которые присмотрят за вашими детьми в течение тренировки.</p>
@@ -79,32 +79,32 @@
                         <ul class="partners__list">
                             <li class="partners__item">
                                 <a class="partners__link" href="">
-                                    <img src="img/logo/afrodita/flamingo.png" alt="Фламинго" class="partners__link-icon">
+                                    <img src="img/logo/afrodita/flamingo.png" alt="Фламинго" class="partners__icon">
                                 </a>
                             </li>
                             <li class="partners__item">
                                 <a class="partners__link" href="">
-                                    <img src="img/logo/afrodita/malibu.png" alt="Malibu" class="partners__link-icon">
+                                    <img src="img/logo/afrodita/malibu.png" alt="Malibu" class="partners__icon"> <!--Почему может вылетать вниз, хотя свойства у всех элементов одинаковы?-->
                                 </a>
                             </li>
                             <li class="partners__item">
                                 <a class="partners__link" href="">
-                                    <img src="img/logo/afrodita/lion.png" alt="Lion" class="partners__link-icon">
+                                    <img src="img/logo/afrodita/lion.png" alt="Lion" class="partners__icon">
                                 </a>
                             </li>
                             <li class="partners__item">
                                 <a class="partners__link" href="">
-                                    <img src="img/logo/afrodita/arni.png" alt="Arni" class="partners__link-icon">
+                                    <img src="img/logo/afrodita/arni.png" alt="Arni" class="partners__icon">
                                 </a>
                             </li>
                             <li class="partners__item">
                                 <a class="partners__link" href="">
-                                    <img src="img/logo/afrodita/grip.png" alt="Гриф" class="partners__link-icon">
+                                    <img src="img/logo/afrodita/grip.png" alt="Гриф" class="partners__icon">
                                 </a>
                             </li>
                             <li class="partners__item">
                                 <a class="partners__link" href="">
-                                    <img src="img/logo/afrodita/athletics.png" alt="Атлетика" class="partners__link-icon">
+                                    <img src="img/logo/afrodita/athletics.png" alt="Атлетика" class="partners__icon">
                                 </a>
                             </li>
                             
@@ -112,48 +112,59 @@
                     </div>
                 
                 </main>
-            </section>
-
-            <!--Footer-->
-            <footer class="footer">
-                <div class="author">Сделано с любовью и старанием <br>на курсе «HTML + CSS» в <b>LoftSchool.</b><br>Автор работы: <b>Прохладов Вадим</b></div>
-                <div class="footer__logo">
-                    <a href="" class="footer__logo-link">
-                        <img src="img/logo/afrodita.png" alt="Афродита">        
-                    </a>
-                </div>
-                <div class="social">
-                    <div class="social__text">Наши социальные сети</div>
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a class="social__link">
-                                <div class="social__icon social__icon-vk"></div>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link">
-                                <div class="social__icon social__icon-fb"></div>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link">
-                                <div class="social__icon social__icon-google"></div>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link">
-                                <div class="social__icon social__icon-twitter"></div>
-                            </a>
-                        </li>
-                        <dli class="social__item">
-                            <a class="social__link">
-                                <div class="social__icon social__icon-mail"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-    
-            </footer>
+            </div>
         </div>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__left">
+                    <div class="footer__author">
+                        Сделано с любовью и старанием <br>на курсе «HTML + CSS» в <b>LoftSchool.</b><br>Автор работы: <b>Прохладов Вадим</b>
+                    </div>
+                </div>
+                <div class="footer__middle">
+                    <div class="footer__logo main-logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="img/logo/afrodita.png" alt="Афродита" class="main-logo__img">        
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__social">
+                        <div class="social__text">
+                            Наши социальные сети
+                        </div>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link">
+                                    <div class="social__icon social__vk"></div>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link">
+                                    <div class="social__icon social__fb"></div>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link">
+                                    <div class="social__icon social__google"></div>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link">
+                                    <div class="social__icon social__twitter"></div>
+                                </a>
+                            </li>
+                            <dli class="social__item">
+                                <a class="social__link">
+                                    <div class="social__icon social__mail"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </body>
 </html>

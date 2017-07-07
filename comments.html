@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,91 +12,90 @@
 
     <body class="clearfix">
         <div class="wrapper">
-            <div class="container">
-                <!--Header-->
-                <header class="header clearfix">
-                    <div class="logo">
-                        <a href="index.html" class="logo__wrapper">
-                            <img src="img/logo/afrodita.png" alt="Афродита" class ="logo__image">
+            <!--Header-->
+            <header class="header clearfix">
+                <div class="container">
+                    <div class="header__logo main-logo">
+                        <a href="index.html" class="main-logo__link">
+                            <img src="img/logo/afrodita.png" alt="Афродита" class ="main-logo__img">
                         </a>                
                     </div>
-                    <div class="contacts">
-                        <a href:"tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
+                    <div class="header__contacts contacts">
+                        <a href:"tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
                         <a href="#" class="contacts__schedule">График работы</a>
                     </div>
-                </header>
-            </div>
+                </div>
+            </header>
             <div class="container">
                 <section class="about">
                     <!--Menu-->
                     <aside class="sidebar">
                         <nav class="menu">
-                            <ul class="menu-list">
-                                <li class="menu-list__item">
-                                    <a href="" class="menu-list__link">
-                                        <div class="menu-list__icon menu-list__icon-main"></div>    
-                                        <div class="menu-list__text">Главная</div>
-                                    </a>
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="index.html" class="menu__link menu__main">Главная</a>
                                 </li>
-                                <li class="menu-list__item">
-                                    <a href="" class="menu-list__link">
-                                        <div class="menu-list__icon menu-list__icon-services"></div>    
-                                        <div class="menu-list__text">Услуги</div>
-                                    </a>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link menu__services">Услуги</a>
                                 </li>
-                                <li class="menu-list__item">
-                                    <a href="" class="menu-list__link">
-                                        <div class="menu-list__icon  menu-list__icon-refs"></div>    
-                                        <div class="menu-list__text">Отзывы</div>
-                                    </a>
+                                <li class="menu__item">
+                                    <a href="comments.html" class="menu__link menu__comments">Отзывы</a>
                                 </li>                        
                             </ul>
                         </nav>
                     </aside>
                     
                     <!--Main page content-->
-                    <main class="main-content">
-                        <div class="breadcrumbs">
-                            <a class="breadcrumbs__main" href="index.html" >Главная</a> / Отзывы
-                        </div>
+                    <main class="main">
+                        <nav class="breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a href="index.html" class="breadcrumbs__item breadcrumbs__item--inactive">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__item"> / </li>
+                                <li class="breadcrumbs__item">
+                                    <a href="" class="breadcrumbs__item">Отзывы</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <div class="comments">
                             <h2 class="comments__title">Отзывы</h2>
                             <ul class="comments__list clearfix">
-                                <li class="comments__item">
-                                    <div class="comments__item-img">
-                                        <img src="img/photos/comments/alexey_voronov.jpg" class="comments__item-photo">
+                                <li class="comments__item clearfix">
+                                    <div class="comments__img">
+                                        <img src="img/photos/comments/alexey_voronov.jpg" class="comments__photo">
                                     </div>
-                                    <div class="comments__item-text">
+                                    <div class="comments__block">
                                         <p class="comments__date">12.10.2016</p>
                                         <p class="comments__person">Алексей Воронов</p>
                                         <p class="comments__text">Пришел, чтобы похудеть немного к лету, но благодаря тренеру Александру Ковалеву, получилось накачать нормальные банки. Втянулся, теперь занимаюсь регулярно, 2 раза в неделю, доволен и всем советую. Кстати, польза от тренировок намного заметнее, если придерживаться ПП. Рацион мне составили на неделю, но я его повторяю, не надоедает.</p>
                                     </div>
                                 </li>
-                                <li class="comments__item">
-                                    <div class="comments__item-img">
-                                        <img src="img/photos/comments/inna_smolina.jpg" class="comments__item-photo">
+                                <li class="comments__item clearfix">
+                                    <div class="comments__img">
+                                        <img src="img/photos/comments/inna_smolina.jpg" class="comments__photo">
                                     </div>
-                                    <div class="comments__item-text">
+                                    <div class="comments__block">
                                         <p class="comments__date">01.02.2016</p>
                                         <p class="comments__person">Инна Смольная</p>
                                         <p class="comments__text">Подарили на день рождения абонемент в бассейн, пришлось воспользоваться. Сама бы я сюда не пришла, не очень нравится плавать с мужиками, которые пялятся постоянно, администрации следует обратить внимание на этот вопрос! Еще бросилось в глаза хамство обслуживающего персонала. Уборщица в раздевалке вела себя, как будто это к ней в гости пришли.</p>
                                     </div>
                                 </li>
-                                    <li class="comments__item">
-                                    <div class="comments__item-img">
-                                        <img src="img/logo/afrodita_logo.png" class="comments__item-photo comments__item-logo">
+                                    <li class="comments__item clearfix">
+                                    <div class="comments__img">
+                                        <img src="img/logo/afrodita_logo.png" class="comments__photo comments__logo"> <!--Сколько не пытаюсь, не могу выровнять по центру-->
                                     </div>
-                                    <div class="comments__item-text">
+                                    <div class="comments__block">
                                         <p class="comments__date">22.12.2015</p>
                                         <p class="comments__person">Владимир Савельев</p>
                                         <p class="comments__text">Норм клуб, железа хватает, но техника устаревшая. За эту цену – прокатит. Если хотите большего, то обращайтесь в специализированные тренажерки с новым железом и европейской техникой.</p>
                                     </div>
                                 </li>  
-                                <li class="comments__item">
-                                    <div class="comments__item-img">
-                                        <img src="img/photos/comments/irina_savina.jpg" class="comments__item-photo">
+                                <li class="comments__item clearfix">
+                                    <div class="comments__img">
+                                        <img src="img/photos/comments/irina_savina.jpg" class="comments__photo">
                                     </div>
-                                    <div class="comments__item-text">
+                                    <div class="comments__block">
                                         <p class="comments__date">14.08.2015</p>
                                         <p class="comments__person">Ирина Савина</p>
                                         <p class="comments__text">Занимаюсь 4й месяц на петлях ТРХ и очень нравится результат. Даже знакомые отметили, что я помолодела, появилась талия, ножки постройнели. Нагрузка сначала была непривычная, но втягиваешься быстро, тем более, что отражение в зеркале радует. Цены приятные, а если платить на полгода вперед, то вообще выгодно получается, скидка почти 30%. </p>
@@ -104,13 +103,11 @@
                                 </li>                          
                             </ul>
                         </div>
-                        <div class="pagination">
+                        <nav class="pagination">
                             <div class="pagination__text">Страница 1 из 7</div>
                             <ul class="pagination__list">
                                 <li class="pagination__item">
-                                    <a class="pagination__link" href="">
-                                        <img src="img/icons/navigation/back.png" alt="back" class="pagination-navigation">
-                                    </a>
+                                    <img src="img/icons/navigation/back.png" alt="back" class="pagination-nav">
                                 </li>
                                 <li class="pagination__item">
                                     <a class="pagination__link" href="">1</a>
@@ -134,55 +131,53 @@
                                     <a class="pagination__link" href="">7</a>
                                 </li>                            
                                 <li class="pagination__item">
-                                    <a class="pagination__link" href="">
-                                        <img src="img/icons/navigation/forth.png" alt="back" class="pagination-navigation">
-                                    </a>
+                                    <img src="img/icons/navigation/forth.png" alt="back" class="pagination-nav">
                                 </li>
                             </ul>
-                        </div>
+                        </nav>
                         <!--Form to submit-->
                         <div class="form">
-                            <form class="form__elem" action="url" method="post">
+                            <form class="form__block" action="url" method="post">
                                 <div class="form__title">Оставить отзыв</div>
                                 <div class="form__elem">
                                     <div class="form__row clearfix">
-                                        <label class="form__elem-item">
+                                        <label class="form__item">
                                             <div class="form__caption">Ваше имя</div>
-                                            <input type="text" placeholder="Андрей" class="form__caption-field">
+                                            <input type="text" placeholder="Андрей" class="form__input">
                                         </label>
-                                        <label class="form__elem-item">
+                                        <label class="form__item">
                                             <div class="form__caption">Ссылка на профиль VK</div>
-                                            <input type="url" placeholder="vk.com/example" class="form__caption-field">
+                                            <input type="url" placeholder="vk.com/example" class="form__input">
                                         </label>
                                     </div>
                                     <div class="form__row clearfix">
-                                        <label class="form__elem-textarea">
+                                        <label class="form__textarea">
                                             <div class="form__caption">Текст отзыва</div>
                                             <textarea placeholder="Мне понравилось" class="form__text"></textarea>
                                         </label>
                                     </div>
                                     <div class="form__row clearfix">
-                                        <div class="form__elem-options">
+                                        <div class="form__options">
                                             <div class="form__caption">
                                                 Отображать фото в отзыве?
                                             </div>
                                             <div class="form__options">
-                                                <label class="form__options">
-                                                    <input type="radio" name="review" class="form__options-field" checked> 
-                                                    <div class="form__options-fake"></div>
-                                                    <div class="form__options-text">Да</div>
+                                                <label class="form__radio">
+                                                    <input type="radio" name="review" class="radio__btn" checked> 
+                                                    <div class="radio__fake"></div>
+                                                    <div class="radio__text">Да</div>
                                                 </label>
-                                                <label class="form__options">
-                                                    <input type="radio" name="review" class="form__options-field">
-                                                    <div class="form__options-fake"></div> 
-                                                    <div class="form__options-text">Нет</div>
+                                                <label class="form__radio">
+                                                    <input type="radio" name="review" class="radio__btn">
+                                                    <div class="radio__fake"></div> 
+                                                    <div class="radio__text">Нет</div>
                                                 </label>
                                             </div>
                                         </div>
 
-                                        <div class="form__elem-button">
-                                            <div class="form__button">
-                                                <button type="submit" class="form__button-field">Отправить</button>
+                                        <div class="form__button">
+                                            <div class="form__btn">
+                                                <button type="submit" class="form__submit">Отправить</button>
                                             </div>
                                         </div>
                                     </div>
@@ -198,41 +193,53 @@
 
         <!--Footer-->
         <footer class="footer">
-            <div class="author">Сделано с любовью и старанием <br>на курсе «HTML + CSS» в <b>LoftSchool.</b><br>Автор работы: <b>Прохладов Вадим</b></div>
-            <div class="footer__logo">
-                <a href="" class="footer__logo-link">
-                    <img src="img/logo/afrodita.png" alt="Афродита">        
-                </a>
-            </div>
-            <div class="social">
-                <div class="social__text">Наши социальные сети</div>
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__link">
-                            <div class="social__icon social__icon-vk"></div>
+            <div class="container">
+                <div class="footer__left">
+                    <div class="footer__author">
+                        Сделано с любовью и старанием <br>на курсе «HTML + CSS» в <b>LoftSchool.</b><br>Автор работы: <b>Прохладов Вадим</b>
+                    </div>
+                </div>
+                <div class="footer__middle">
+                    <div class="footer__logo main-logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="img/logo/afrodita.png" alt="Афродита" class="main-logo__img">        
                         </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link">
-                            <div class="social__icon social__icon-fb"></div>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link">
-                            <div class="social__icon social__icon-google"></div>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link">
-                            <div class="social__icon social__icon-twitter"></div>
-                        </a>
-                    </li>
-                    <dli class="social__item">
-                        <a class="social__link">
-                            <div class="social__icon social__icon-mail"></div>
-                        </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__social">
+                        <div class="social__text">
+                            Наши социальные сети
+                        </div>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link">
+                                    <div class="social__icon social__vk"></div>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link">
+                                    <div class="social__icon social__fb"></div>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link">
+                                    <div class="social__icon social__google"></div>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link">
+                                    <div class="social__icon social__twitter"></div>
+                                </a>
+                            </li>
+                            <dli class="social__item">
+                                <a class="social__link">
+                                    <div class="social__icon social__mail"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>

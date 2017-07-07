@@ -1,0 +1,39 @@
+/*
+header
+*/
+
+.header {
+    background-color:  #131415; 
+    }
+
+.header__logo, .header__contacts {
+    float: left;    
+    width: 50%;
+}
+
+.main-logo__img {
+    margin: 30px 0px 20px 0px;
+}
+
+.contacts {
+    text-align: right;
+}
+
+.contacts__phone {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 21px;
+    text-decoration: none;
+    display: block;
+    margin: 20px 20px 0px 0px;
+}
+
+.contacts__schedule {
+    font-weight: bold;
+    color: #f89513;
+    font-size: 14px;
+    text-decoration: none;
+    opacity: 0.7;
+    display: block;
+    margin: 0px 20px 17px 0px;
+}
