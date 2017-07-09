@@ -24,13 +24,9 @@ sidebar
     font-size: 12px;
     display: inline-block;
     vertical-align: middle;
-}
-
-.menu__text {
-    max-width: 120px;
-    display: inline-block;
-    vertical-align: middle;
-
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .menu__link:hover {
@@ -52,7 +48,7 @@ sidebar
     vertical-align: middle;
 }
 
-.menu__main:before {
+.menu__link--main:before {
     content:"";
     display: inline-block;
     background-image: url('../../img/icons/menu/main.png');
@@ -60,15 +56,13 @@ sidebar
     height: 14px;
 }
 
-.menu__main:hover:before {
+.menu__link--main:hover:before {
     background-image: url('../../img/icons/menu/main_hover.png');
 }
 
-.menu__main--active .menu__text {
-    color: #221f1f;
-}
 
-.menu__services:before {
+
+.menu__link--services:before {
     content:"";
     display: inline-block;
     background-image: url('../../img/icons/menu/service.png');
@@ -76,16 +70,12 @@ sidebar
     height: 14px;
 }
 
-.menu__services:hover:before {
+.menu__link--services:hover:before {
     background-image: url('../../img/icons/menu/service_hover.png');
 }
 
-.menu__services--active .menu__text {
-    color: #221f1f;
-}
 
-
-.menu__comments:before {
+.menu__link--comments:before {
     content:"";
     display: inline-block;
     background-image: url('../../img/icons/menu/comments.png');
@@ -94,11 +84,22 @@ sidebar
     margin-right: 12px; 
 }
 
-.menu__comments--active .menu__text {
-    color: #221f1f;
-}
-
-.menu__comments:hover:before {
+.menu__link--comments:hover:before {
     background-image: url('../../img/icons/menu/comments_hover.png');
 }
 
+.menu__link.menu__link--active {
+    color: #221f1f;
+}
+
+.menu__link--main.menu__link--active:before {
+    background-image: url('../../img/icons/menu/main_hover.png')
+}
+
+.menu__link--services.menu__link--active:before {
+    background-image: url('../../img/icons/menu/service_hover.png')
+}
+
+.menu__link--comments.menu__link--active:before {
+    background-image: url('../../img/icons/menu/comments_hover.png')
+}

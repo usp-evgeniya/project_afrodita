@@ -33,13 +33,13 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="index.html" class="menu__link menu__main">Главная</a>
+                                    <a href="index.html" class="menu__link menu__link--main">Главная</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link menu__services">Услуги</a>
+                                    <a href="services.html" class="menu__link menu__link--services">Услуги</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="comments.html" class="menu__link menu__comments">Отзывы</a>
+                                    <a href="comments.html" class="menu__link menu__link--comments  menu__link--active">Отзывы</a>
                                 </li>                        
                             </ul>
                         </nav>
@@ -53,9 +53,7 @@
                                     <a href="index.html" class="breadcrumbs__item breadcrumbs__item--inactive">Главная</a>
                                 </li>
                                 <li class="breadcrumbs__item"> / </li>
-                                <li class="breadcrumbs__item">
-                                    <a href="" class="breadcrumbs__item">Отзывы</a>
-                                </li>
+                                <li class="breadcrumbs__item">Отзывы</li>
                             </ul>
                         </nav>
                         <div class="comments">
@@ -106,11 +104,9 @@
                         <nav class="pagination">
                             <div class="pagination__text">Страница 1 из 7</div>
                             <ul class="pagination__list">
+
                                 <li class="pagination__item">
-                                    <img src="img/icons/navigation/back.png" alt="back" class="pagination-nav">
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="">1</a>
+                                    <a class="pagination__link pagination__link--active" href="">1</a>
                                 </li>
                                 <li class="pagination__item">
                                     <a class="pagination__link" href="">2</a>
@@ -130,9 +126,6 @@
                                 <li class="pagination__item">
                                     <a class="pagination__link" href="">7</a>
                                 </li>                            
-                                <li class="pagination__item">
-                                    <img src="img/icons/navigation/forth.png" alt="back" class="pagination-nav">
-                                </li>
                             </ul>
                         </nav>
                         <!--Form to submit-->
@@ -195,8 +188,11 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__left">
+                    <div class="footer__course">
+                        Сделано с любовью и старанием <br>на курсе «HTML + CSS» в <b>LoftSchool.</b>
+                    </div>
                     <div class="footer__author">
-                        Сделано с любовью и старанием <br>на курсе «HTML + CSS» в <b>LoftSchool.</b><br>Автор работы: <b>Прохладов Вадим</b>
+                        Автор работы: <b>Прохладов Вадим</b>
                     </div>
                 </div>
                 <div class="footer__middle">
@@ -214,7 +210,7 @@
                         <ul class="social__list">
                             <li class="social__item">
                                 <a class="social__link">
-                                    <div class="social__icon social__vk"></div>
+                                    <div class="social__icon social__vk social__vk--active"></div>
                                 </a>
                             </li>
                             <li class="social__item">

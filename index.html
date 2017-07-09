@@ -32,19 +32,13 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="index.html" class="menu__link menu__main menu__main--active"> <!--Как при использовании псевдоэлементов сделать стилизацию псевдоэлемента, когда он активен?-->
-                                        <div class="menu__text">Главная</div> <!--Как сделать, чтобы текст переносился на новую строку, если будет длинным?-->
-                                    </a>
+                                    <a href="index.html" class="menu__link menu__link--main menu__link--active">Главная</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link menu__services">
-                                        <div class="menu__text">Услуги</div>
-                                    </a>
+                                    <a href="services.html" class="menu__link menu__link--services">Услуги</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="comments.html" class="menu__link menu__comments">
-                                        <div class="menu__text">Отзывы</div>
-                                    </a>
+                                    <a href="comments.html" class="menu__link menu__link--comments">Отзывы</a>
                                 </li>                        
                             </ul>
                         </nav>
@@ -118,8 +112,11 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__left">
+                    <div class="footer__course">
+                        Сделано с любовью и старанием <br>на курсе «HTML + CSS» в <b>LoftSchool.</b>
+                    </div>
                     <div class="footer__author">
-                        Сделано с любовью и старанием <br>на курсе «HTML + CSS» в <b>LoftSchool.</b><br>Автор работы: <b>Прохладов Вадим</b>
+                        Автор работы: <b>Прохладов Вадим</b>
                     </div>
                 </div>
                 <div class="footer__middle">
@@ -137,7 +134,7 @@
                         <ul class="social__list">
                             <li class="social__item">
                                 <a class="social__link">
-                                    <div class="social__icon social__vk"></div>
+                                    <div class="social__icon social__vk social__vk--active"></div>
                                 </a>
                             </li>
                             <li class="social__item">

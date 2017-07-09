@@ -7,10 +7,9 @@ footer {
     min-width: 1100px;
     height: 77px;
     margin-top: -77px;
-    margin: 0 auto;
-
-    
+    margin: 0 auto; 
 }
+
 
 .footer__left, .footer__middle, .footer__right {
     float: left;
@@ -18,7 +17,9 @@ footer {
     display: inline-block;
 }
 
-.footer__author {
+
+
+.footer__left {
     font-size: 14px;
     color: #ffffff;
     text-align: left;
@@ -35,10 +36,12 @@ footer {
     margin-top: 15px;
 }
 
+
 .social__list {
     display: block;
     text-align: left;
 }
+
 
 .social__text {
     font-size: 14px;
@@ -51,65 +54,70 @@ footer {
    display: inline-block; 
    text-align: left;
    margin-right: 5px;
+
 }
 
+/*
+.social__link {
+
+    width: 20px;
+    height: 20px;  
+    background-size: contain; 
+}
+*/
 
 .social__icon {
     width: 20px;
     height: 20px;
     opacity: 0.8;
+    background-size: contain;
 }
 
 .social__vk {
-    background-image: url('../img/icons/social/vk.png');
-    background-size: contain;
+    background-image: url('../../img/icons/social/vk.png');
 }
 
 .social__fb {
-    background-image: url('../img/icons/social/fb.png');
-    background-size: contain;
+    background-image: url('../../img/icons/social/fb.png');
 }
 
 .social__google {
-    background-image: url('../img/icons/social/google.png');
-    background-size: contain;
+    background-image: url('../../img/icons/social/google.png');
 }
 
 .social__twitter {
-    background-image: url('../img/icons/social/twitter.png');
-    background-size: contain;
+    background-image: url('../../img/icons/social/twitter.png');
 }
 
 .social__mail {
-    background-image: url('../img/icons/social/mail.png');
-    background-size: contain;
+    background-image: url('../../img/icons/social/mail.png');
+}
+
+.social__icon.social__vk--active {
+    background-image: url('../../img/icons/social/vk_hover.png');
+    opacity: 1;
+}
+
+
+.social__link:hover .social__icon {
+    opacity: 1;
 }
 
 .social__link:hover .social__vk {
-    background-image: url('../img/icons/social/vk_hover.png');
-    background-size: contain;
-    opacity: 1;
+    background-image: url('../../img/icons/social/vk_hover.png');
 }
 
 .social__link:hover .social__fb {
-    background-image: url('../img/icons/social/fb_hover.png');
-    background-size: contain;
-    opacity: 1;
+    background-image: url('../../img/icons/social/fb_hover.png');
 }
 
 .social__link:hover .social__google {
-    background-image: url('../img/icons/social/google_hover.png');
-    background-size: contain;
-    opacity: 1;
+    background-image: url('../../img/icons/social/google_hover.png');
 }
 .social__link:hover .social__twitter {
-    background-image: url('../img/icons/social/twitter_hover.png');
-    background-size: contain;
-    opacity: 1;
+    background-image: url('../../img/icons/social/twitter_hover.png');
 }
 .social__link:hover .social__mail {
-    background-image: url('../img/icons/social/mail_hover.png');
-    background-size: contain;
-    opacity: 1;
+    background-image: url('../../img/icons/social/mail_hover.png');
 }
 
