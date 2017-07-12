@@ -4,19 +4,34 @@ header
 
 .header {
     background-color:  #131415; 
+    padding: 18px 0;
     }
 
 .header__logo, .header__contacts {
     float: left;    
     width: 50%;
+    height: 100%;
+    min-height: 40px;  
+  
 }
 
-.main-logo__img {
-    margin: 30px 0px 20px 0px;
+.header__logo {
+    position: relative;
+    height: 45px;        
+  
+}
+
+.header__logo .main-logo__wrapper {
+    text-decoration: none;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
 }
 
 .contacts {
     text-align: right;
+    display: inline-block;
 }
 
 .contacts__phone {
@@ -24,16 +39,77 @@ header
     color: #ffffff;
     font-size: 21px;
     text-decoration: none;
-    display: block;
-    margin: 20px 20px 0px 0px;
+
 }
 
 .contacts__schedule {
     font-weight: bold;
     color: #f89513;
     font-size: 14px;
-    text-decoration: none;
     opacity: 0.7;
     display: block;
-    margin: 0px 20px 17px 0px;
 }
+
+.contacts__group {
+    position: relative;
+}
+
+.contacts__group:hover .contacts__dropdown {
+    display: block;
+}
+
+.contacts__dropdown {
+    position: absolute;
+    font-size: 14px;
+    padding: 15px 20px;
+    border-radius: 3px 0px 3px 3px;
+    right: 0;
+    text-align: left;
+    top: 100%;
+    z-index: 1000;
+    background-image: -moz-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(255,255,255) 100%);
+    opacity: 0.95;
+    box-shadow: 0px 0px 10px 0px rgba(23, 59, 117, 0.55);
+    margin-top: 20px;
+    display: none;
+}
+
+.contacts__dropdown:before {
+    content: "";
+    display: block;
+    /*border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid #f3f3f3;
+    border-left: 1px solid transparent;*/
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    bottom: 100%;
+    position: absolute;
+    right: 0;
+    transform: rotate(45deg);
+    border-radius: 3px 0px 0px 0px;
+    margin-bottom: -12px;
+    margin-right: 5px;
+}
+
+.contacts__dropdown:after {
+    content: "";
+    display: block;
+    height: 30px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+}
+
+
+.contacts__dropdown--time {
+    font-weight: bold;
+    color: #f89513;
+    margin-bottom: 6px;
+}
+
+

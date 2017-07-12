@@ -16,13 +16,19 @@
             <header class="header clearfix">
                 <div class="container">
                     <div class="header__logo main-logo">
-                        <a href="index.html" class="main-logo__link">
+                        <a href="index.html" class="main-logo__wrapper">
                             <img src="img/logo/afrodita.png" alt="Афродита" class ="main-logo__img">
                         </a>                
                     </div>
                     <div class="header__contacts contacts">
                         <a href:"tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
-                        <a href="#" class="contacts__schedule">График работы</a>
+                        <div class="contacts__group">
+                            <a href="#" class="contacts__schedule">График работы</a>
+                            <div class="contacts__dropdown clearfix">
+                                <div class="contacts__dropdown--time">пн-вс: 09:00-20:00</div>
+                                <div class="contacts__dropdown--lunch">обед: 14:00-14:30</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -52,7 +58,6 @@
                                 <li class="breadcrumbs__item">
                                     <a href="index.html" class="breadcrumbs__item breadcrumbs__item--inactive">Главная</a>
                                 </li>
-                                <li class="breadcrumbs__item"> / </li>
                                 <li class="breadcrumbs__item">Отзывы</li>
                             </ul>
                         </nav>

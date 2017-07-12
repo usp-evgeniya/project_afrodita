@@ -2,23 +2,6 @@
 * comments page
 */
 
-.breadcrumbs {
-    font-size: 14px;
-    font-style: italic;
-    margin-bottom: 10px;
-    margin-top: 45px; 
-}
-
-.breadcrumbs__item--inactive {
-    color: #f89513;
-}
-
-
-
-.breadcrumbs__item {
-    display: inline-block;
-}
-
 .comments__title {
     font-weight: bold;
     font-size: 49px;

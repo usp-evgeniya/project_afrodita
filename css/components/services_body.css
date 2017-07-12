@@ -1,6 +1,8 @@
 .services {
     margin-bottom: 30px;
     float: left;
+    font-size: 0;
+    margin-left: -55px;
 }
 
 .services__title {
@@ -11,10 +13,11 @@
 }
 
 .services__item {
-    float: left;
-    width: 250px;
-    width: 33.33%;  
+    display: inline-block;
+    width: 250px;  
     margin-bottom: 40px;
+    margin-left: 55px;
+    vertical-align: top;
 
 }
 

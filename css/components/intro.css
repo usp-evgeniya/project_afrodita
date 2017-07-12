@@ -1,0 +1,51 @@
+
+
+.wrapper--intro {
+min-width: initial;
+}
+
+.welcome {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: url('../../img/background/intro/gym.jpg') center center no-repeat;
+    background-size: cover;
+    }
+
+.welcome:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width:0;
+    vertical-align: middle;
+}
+
+.welcome__logo {
+    margin-bottom: 35px;
+}
+
+.welcome__content {
+display: inline-block;
+vertical-align: middle;
+}
+
+.welcome__button {
+  border-radius: 3px;
+  background-color: rgb(19, 20, 21);
+  width: 172px;
+  height: 45px;
+}
+
+.welcome__link {
+    font-size: 12px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
