@@ -24,6 +24,9 @@ footer {
     font-size: 14px;
     color: #ffffff;
     text-align: left;
+}
+
+.footer__course {
     margin-top: 10px;
 }
 
@@ -86,31 +89,31 @@ footer {
     width: 20px;
     height: 20px;
     opacity: 0.8;
-    background-size: contain;
+    background: url('../../img/icons/social.png') 0 0 no-repeat;
 }
 
 .social__vk {
-    background-image: url('../../img/icons/social/vk.png');
+    background-position: 0 0;
 }
 
 .social__fb {
-    background-image: url('../../img/icons/social/fb.png');
+    background-position: -100px 0;
 }
 
 .social__google {
-    background-image: url('../../img/icons/social/google.png');
+    background-position: -200px 0;
 }
 
 .social__twitter {
-    background-image: url('../../img/icons/social/twitter.png');
+    background-position: -300px 0;
 }
 
 .social__mail {
-    background-image: url('../../img/icons/social/mail.png');
+    background-position: -400px 0;
 }
 
 .social__icon.social__vk--active {
-    background-image: url('../../img/icons/social/vk_hover.png');
+    background-position: 0 bottom;
     opacity: 1;
 }
 
@@ -120,20 +123,20 @@ footer {
 }
 
 .social__link:hover .social__vk {
-    background-image: url('../../img/icons/social/vk_hover.png');
+    background-position: 0 bottom;
 }
 
 .social__link:hover .social__fb {
-    background-image: url('../../img/icons/social/fb_hover.png');
+    background-position: -100px bottom;
 }
 
 .social__link:hover .social__google {
-    background-image: url('../../img/icons/social/google_hover.png');
+    background-position: -200px bottom;
 }
 .social__link:hover .social__twitter {
-    background-image: url('../../img/icons/social/twitter_hover.png');
+    background-position: -300px bottom;
 }
 .social__link:hover .social__mail {
-    background-image: url('../../img/icons/social/mail_hover.png');
+    background-position: -400px bottom;
 }
 
