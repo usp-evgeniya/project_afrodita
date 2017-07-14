@@ -24,6 +24,7 @@ footer {
     font-size: 14px;
     color: #ffffff;
     text-align: left;
+    line-height: 18px;
 }
 
 .footer__course {
@@ -76,20 +77,12 @@ footer {
 
 }
 
-/*
-.social__link {
-
-    width: 20px;
-    height: 20px;  
-    background-size: contain; 
-}
-*/
-
 .social__icon {
     width: 20px;
     height: 20px;
     opacity: 0.8;
     background: url('../../img/icons/social.png') 0 0 no-repeat;
+    cursor: pointer;
 }
 
 .social__vk {

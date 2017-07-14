@@ -23,14 +23,17 @@ sidebar
     font-weight: bold;
     font-size: 12px;
     display: inline-block;
-    /*vertical-align: middle;*/
     max-width: 160px;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: color 0.5s ease-out;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
 }
 
 .menu__link:hover {
     color: #221f1f;
+    
 }
 
 .menu__link:active {
@@ -42,28 +45,24 @@ sidebar
     content:"";
     display: inline-block;
     vertical-align: middle;  
-    margin-right: 12px; 
+    margin-right: 17px; 
     width: 20px;
     height: 18px;
     background: url('../../img/icons/navigation.png') 0 0 no-repeat;
 }
 
-.menu__link:hover:before {
-    content: "";
-    display: inline-block;
-}
-
 .menu__link--main:before {
     content:"";
     display: inline-block;
-    background-position: 0 bottom;  
+    background-position: 0 bottom;
+    
+    
 }
 
 .menu__link--main:hover:before {
     background-position: 0 0;
+
 }
-
-
 
 .menu__link--services:before {
     content:"";
@@ -72,9 +71,9 @@ sidebar
 }
 
 .menu__link--services:hover:before {
+    animation: change 0.5s;
     background-position: -100px 0;
 }
-
 
 .menu__link--comments:before {
     content:"";
