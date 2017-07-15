@@ -28,7 +28,7 @@ min-width: initial;
 }
 
 .welcome__content {
-display: inline-block;
+    display: inline-block;
 vertical-align: middle;
 }
 
@@ -93,7 +93,7 @@ border: 1px solid #f89513;
         transform: rotateX(0deg);
         -webkit-transform: rotateX(0deg);
         -moz-transform: rotateX(0deg);
-        opacity:1;
+        opacity: 1;
     
     }
 }

@@ -44,6 +44,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
 }
 
 .footer__right {
@@ -71,65 +73,101 @@ footer {
 }
 
 .social__item {
-   display: inline-block; 
-   text-align: left;
-   margin-right: 5px;
+    display: inline-block; 
+    text-align: left;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
 
+.social__link {
+    
+    
 }
 
 .social__icon {
+    display: block;    
     width: 20px;
     height: 20px;
     opacity: 0.8;
     background: url('../../img/icons/social.png') 0 0 no-repeat;
     cursor: pointer;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.social__icon:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    background: url('../../img/icons/social.png') -100px bottom no-repeat;    
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .social__vk {
     background-position: 0 0;
 }
 
+.social__vk:after {
+    background-position: 0 bottom;
+}
+
 .social__fb {
     background-position: -100px 0;
+
 }
+
+.social__fb:after {
+    background-position: -100px bottom;
+}
+
 
 .social__google {
     background-position: -200px 0;
+}
+
+.social__google:after {
+    background-position: -200px bottom;
 }
 
 .social__twitter {
     background-position: -300px 0;
 }
 
+.social__twitter:after {
+    background-position: -300px bottom;
+}
+
 .social__mail {
     background-position: -400px 0;
 }
 
-.social__icon.social__vk--active {
-    background-position: 0 bottom;
-    opacity: 1;
+.social__mail:after {
+    background-position: -400px bottom;
 }
-
 
 .social__link:hover .social__icon {
     opacity: 1;
 }
 
-.social__link:hover .social__vk {
+.social__link:hover .social__icon:after {
+    opacity: 1;
+}
+
+.social__icon.social__vk--active {
     background-position: 0 bottom;
-}
-
-.social__link:hover .social__fb {
-    background-position: -100px bottom;
-}
-
-.social__link:hover .social__google {
-    background-position: -200px bottom;
-}
-.social__link:hover .social__twitter {
-    background-position: -300px bottom;
-}
-.social__link:hover .social__mail {
-    background-position: -400px bottom;
+    opacity: 1;
 }
 
