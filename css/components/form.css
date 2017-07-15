@@ -160,6 +160,9 @@
     width: 125px;
     height: 45px;
     cursor: pointer;
+    transition: border 0.5s cubic-bezier(0.3, 0.16, 0.29, 0.94);
+    -webkit-transition: border 0.5s cubic-bezier(0.3, 0.16, 0.29, 0.94);
+    -moz-transition: border 0.5s cubic-bezier(0.3, 0.16, 0.29, 0.94);
 }
 
 .form__submit:hover {
