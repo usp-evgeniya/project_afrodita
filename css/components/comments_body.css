@@ -103,7 +103,11 @@
     padding: 3px 8px;
     font-size: 14px;
     font-weight: bold;
-    text-decoration: none; 
+    text-decoration: none;
+    transition: 0.5s ease-in; 
+    -webkit-transition: 0.5s ease-in; 
+    -moz-transition: 0.5s ease-in; 
+
 }
 
 .pagination__item:first-child:before {
