@@ -19,6 +19,8 @@
     display: block;
     float: left;
     width: 270px;
+    font-size: 14px;
+    /*margin-bottom: 7px; */
 }
 
 .form__textarea {
@@ -32,9 +34,9 @@
 }
 
 .form__caption {
-    font-size: 14px;
+   font-size: 14px;/*
     width: 100%;
-    margin-bottom: 7px; 
+    margin-bottom: 7px; */
 }
 
 .form__row {
@@ -58,6 +60,7 @@
     height: 45px;
     padding: 15px 10px;
     cursor: pointer;
+    margin-top: 5px;
        
 }
 
@@ -75,6 +78,7 @@
     height: 90px;
     padding: 10px;
     cursor: pointer;
+    margin-top: 7px;
 }
 
 .form__input:focus, .form__text:focus {
@@ -84,18 +88,25 @@
     border-color: #f89513;
 }
 
+.form__radio {
+    margin-right: 18px;
+    vertical-align: center;
+}
+
 .radio__btn {
-    display:inline-block;
+    display: inline-block;
     display: none;
 }
 
 .radio__text {
-    display:inline-block;
+    display: inline-block;
     font-size: 14px;
+    vertical-align: middle;
 }
 
 .radio__fake {
     display: inline-block;
+    vertical-align: middle;
     border: 1px solid rgb(201, 201, 201);
     border-radius: 50%;
     width: 18px;
@@ -134,14 +145,17 @@
     float: left;
     width: 50%;
 }
-
+/*
 .form__options, .form__button {
     float: left;
     width: 50%;
-    margin-top: -5px;
-
+   /* margin-top: 7px;*/
 }
 
+
+.form__options {
+    margin-top: 5px;
+}
 
 .form__btn {
     float: right;
